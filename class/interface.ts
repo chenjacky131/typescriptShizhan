@@ -49,18 +49,40 @@
   // let obj:UserObj = {name: 'tom'}
 
 // 5.类类型接口：对类的约束，和抽象类abstract有点相似
-interface Animal{
-  name:string
-  eat(str:string):void
-}
-class Dog implements Animal{
-  name:string
-  constructor(name:string){
-    this.name = name
-  }
-  eat(str:string):void{
-    console.log(`${this.name}吃${str}`)
-  }
-}
-let d = new Dog('小黑')
-d.eat('骨头')
+// interface Animal{
+//   name:string
+//   eat(str:string):void
+// }
+// class Dog implements Animal{
+//   name:string
+//   constructor(name:string){
+//     this.name = name
+//   }
+//   eat(str:string):void{
+//     console.log(`${this.name}吃${str}`)
+//   }
+// }
+// let d = new Dog('小黑')
+// d.eat('骨头')
+
+// 6.接口扩展：接口可以继承接口
+// interface Animal{
+//   eat():void
+// }
+// interface People extends Animal{
+//   work():string
+// }
+// class BlackPerple implements People{
+//   constructor(){
+
+//   }
+//   eat(){
+//     console.log('黑人吃西瓜')
+//   }
+//   work():string{
+//     return '黑人在工作'
+//   }
+// }
+// let b = new BlackPerple()
+// b.eat()
+// console.log(b.work())
